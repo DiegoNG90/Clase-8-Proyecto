@@ -25,7 +25,7 @@ $brand.onclick = function(){
 
 //Interaccion con el h1 de la pagina inicio.
 let path = window.location.pathname;
-const page = "/inicio.html";
+const page = "/Clase-8-Proyecto/inicio.html";
 
 const $h1Inicio = document.querySelector('.titulo-inicio') 
 if (path === page){
