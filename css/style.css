@@ -1110,6 +1110,11 @@ footer{
 }
 
 /* SKILLS */
+
+#skills-anchor:hover { 
+    text-decoration: none;
+}
+
 .container-skills{
     width: 90vw;
     margin: 0 auto;

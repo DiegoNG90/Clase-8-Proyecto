@@ -37,8 +37,8 @@
               PROYECTOS
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="https://geekform.netlify.app/">Formulario Geek</a>
-              <a class="dropdown-item" href="https://landingpetpage-bootstrap.netlify.app">Pet landing page</a>
+              <a class="dropdown-item" href="https://geekform.netlify.app/" target="_blank">Formulario Geek</a>
+              <a class="dropdown-item" href="https://landingpetpage-bootstrap.netlify.app" target="_blank">Pet landing page</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="proyectos.html">Ver todos los proyectos</a>
           </div>
@@ -67,11 +67,11 @@
 
       <p>Me llamo Diego Nicolás Gándara y tengo 30 años, soy argentino, oriundo de Buenos Aires y vivo la mitad del año acá y la otra mitad en Barcelona. Además, soy amante del café y la programación. Empecé éste recorrido en Mayo de 2020, aprendiendo Python de forma autodidacta. En poco tiempo, me ví envuelto en un frenesí de conocimiento por la programación y la lógica. Así es que desde esa fecha al día de hoy, me paso entre 5 y 8 horas diarias estudiando tecnologías informáticas. <br>
       Actualmente, estoy estudiando de forma intensiva el maravilloso mundo del desarrollo web, con el énfasis puesto en el Front End.</p>
-      <h2 id="dev-skills"><i class="fas fa-arrow-alt-circle-right"></i>Mis skills<i class="fas fa-arrow-circle-left"></i></h2>
+      <h2 id="dev-skills"><i class="fas fa-arrow-alt-circle-right"></i><a id="skills-anchor" href="#skills-section"> Mis skills</a><i class="fas fa-arrow-circle-left"></i></h2>
       <img src="images/ninja-gif.gif" alt="">
       
-      <div class="skills-items">
-        <div class="row skills">
+      <div class="skills-items" id="skills-section">
+        <div class="row skills" >
           <div class="col-sm-6 col-md-6 col-lg-3">
             <div class="lenguajes"><i class="fab fa-html5"></i><p>HTML</p></div>
           </div>
@@ -120,10 +120,30 @@
   </footer>
 
   <!-- JQuery -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous">
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <!-- JSpropio -->
   <script src="js/main.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("a").on('click', function(event) {   
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 500, function(){
+            window.location.hash = hash;
+          });
+        } 
+      });
+    });
+  </script>
 </body>
 </html>
