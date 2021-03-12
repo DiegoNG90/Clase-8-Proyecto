@@ -967,6 +967,11 @@ footer{
     align-items: flex-end; */
     color: gold;
 }
+.fa-arrow-up:hover{
+    cursor: pointer; 
+}
+
+  
 /* MEDIAQUERIES STICKY-slider */
 @media (min-width: 841px) and (max-width: 1024px ){
     .fa-arrow-up{
@@ -1126,7 +1131,10 @@ footer{
 } 
 .container-inicio h1{
     position: absolute;
-    top: 5%;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    line-height: 3rem ;
+    top: 10%;
     color: whitesmoke;
     left: 3.5%;
     right: 1.5%;
