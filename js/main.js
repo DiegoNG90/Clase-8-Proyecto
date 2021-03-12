@@ -24,18 +24,18 @@ $brand.onclick = function(){
 
 
 //Interaccion con el h1 de la pagina inicio.
-let path = window.location.pathname;
-const inicioPage = "/inicio.html";
+// let path = window.location.pathname;
+// const inicioPage = "/inicio.html";
 
-const $h1Inicio = document.querySelector('.titulo-inicio') 
-if (path.slice(path.length-12, path.length) === inicioPage){
-    const userName = prompt("Escriba su nombre por favor!");
-    if (!userName || userName === null) {
-        $h1Inicio.innerText = `{"Bienvenido a mi portfolio web!"}`;
-    } else {
-    $h1Inicio.innerText = `{"Bienvenido a mi portfolio web, ${userName}!"}`;
-    }
-}
+// const $h1Inicio = document.querySelector('.titulo-inicio') 
+// if (path.slice(path.length-12, path.length) === inicioPage){
+//     const userName = prompt("Escriba su nombre por favor!");
+//     if (!userName || userName === null) {
+//         $h1Inicio.innerText = `{"Bienvenido a mi portfolio web!"}`;
+//     } else {
+//     $h1Inicio.innerText = `{"Bienvenido a mi portfolio web, ${userName}!"}`;
+//     }
+// }
 
 // Pagina Proyectos
 const $footerLight = document.querySelector('.footer-proyecto');
