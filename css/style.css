@@ -954,7 +954,7 @@ footer{
 
 /* ------------------------------------INICIO AND SKILLS PAGE------------------------------ */
 /* INICIO */
-
+/* STICKY-SLIDER */
 .fa-arrow-up{
     font-size: 2.5rem;
     position: sticky;
@@ -965,18 +965,48 @@ footer{
     /* display: flex;
     justify-content: flex-end;
     align-items: flex-end; */
-    color:rgb(214, 200, 200);
+    color: gold;
 }
-@media (min-width: 785px) and (max-width: 1024px ){
+/* MEDIAQUERIES STICKY-slider */
+@media (min-width: 841px) and (max-width: 1024px ){
     .fa-arrow-up{
-        left: 94%;
-        color: red;
+        left: 96%;
+    }
+}
+@media (min-width: 789px) and (max-width: 840px ){
+    .fa-arrow-up{
+        font-size: 2.3rem;
+        left: 97%;
+    }
+}
+@media (min-width: 661px) and (max-width: 788px ){
+    .fa-arrow-up{
+        font-size: 2rem;
+        left: 97.5%;
+    }
+}
+/* Salto dentro de los containers */
+@media (min-width: 531px) and (max-width: 660px ){
+    .fa-arrow-up{
+        font-size: 2.5rem;
+        left: 89.5%;
+    }
+}
+@media (min-width: 421px) and (max-width: 530px ){
+    .fa-arrow-up{
+        font-size: 2.4rem;
+        left: 87.5%;
+    }
+}
+@media (min-width: 386px) and (max-width: 420px ){
+    .fa-arrow-up{
+        /* font-size: 2.3rem; */
+        left: 86.5%;
     }
 }
 @media (min-width: 100px) and (max-width: 385px ){
     .fa-arrow-up{
         left: 86%;
-
     }
 }
 .container-inicio{
