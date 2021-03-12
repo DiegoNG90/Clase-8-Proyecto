@@ -5,6 +5,7 @@
 }
 body{
     background-color: #f4a261;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     -moz-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     -ms-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -953,6 +954,31 @@ footer{
 
 /* ------------------------------------INICIO AND SKILLS PAGE------------------------------ */
 /* INICIO */
+
+.fa-arrow-up{
+    font-size: 2.5rem;
+    position: sticky;
+    position: -webkit-sticky;
+    left: 96.5%;
+    top: 92vh;
+    z-index:1;
+    /* display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; */
+    color:rgb(214, 200, 200);
+}
+@media (min-width: 785px) and (max-width: 1024px ){
+    .fa-arrow-up{
+        left: 94%;
+        color: red;
+    }
+}
+@media (min-width: 100px) and (max-width: 385px ){
+    .fa-arrow-up{
+        left: 86%;
+
+    }
+}
 .container-inicio{
     background-color: #f4a261;
     padding: 0;
@@ -1039,7 +1065,6 @@ footer{
     -webkit-animation: flip-in-hor-top 1s cubic-bezier(0.600, -0.280, 0.735, 0.045) both;
     -moz-animation: flip-in-hor-top 1s cubic-bezier(0.600, -0.280, 0.735, 0.045) both;
     -ms-animation: flip-in-hor-top 1s cubic-bezier(0.600, -0.280, 0.735, 0.045) both;
-    }
 }
 @-webkit-keyframes flip-in-hor-top {
     0% {
@@ -1136,7 +1161,7 @@ footer{
 }
 .skills-items i{
     font-size: 8rem;
-    color: white:
+    color: white;
     
 }
 .skills div{
