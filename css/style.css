@@ -955,17 +955,44 @@ footer{
 /* ------------------------------------INICIO AND SKILLS PAGE------------------------------ */
 /* INICIO */
 /* STICKY-SLIDER */
-.fa-arrow-up{
+.slider-up{
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     font-size: 2.5rem;
+    transition: 0.5s;
     position: sticky;
-    position: -webkit-sticky;
-    left: 96.5%;
-    top: 92vh;
-    z-index:1;
-    /* display: flex;
-    justify-content: flex-end;
-    align-items: flex-end; */
+    bottom: 16px;
+    left: 96%;
+    height: 2.5rem;
+    width: 2.5rem;
+    border:none;
+    border-radius:100%;
+    background: rgb(186 11 86);
+    opacity: 0;
+    pointer-events: none;
+}
+.slider-up:hover{
+    text-decoration: none;
+}
+.slider-up.active{
+    bottom: 16px;
+    pointer-events: auto;
+    opacity:1;
+    transform: translateY(-55px);
+    /* left: 96%; */
+    
+}
+/* Remuevo horrible bordeado luego de hacer click en el boton */
+.slider-up:focus{
+    outline: 0;
+    box-shadow: none!important;
+}
+.fa-arrow-up{
     color: gold;
+    font-size: 2rem;
 }
 .fa-arrow-up:hover{
     cursor: pointer; 
@@ -974,44 +1001,46 @@ footer{
   
 /* MEDIAQUERIES STICKY-slider */
 @media (min-width: 841px) and (max-width: 1024px ){
-    .fa-arrow-up{
+    .slider-up.active{
         left: 96%;
+        /* height: 50px;
+        width: 50px; */
     }
 }
 @media (min-width: 789px) and (max-width: 840px ){
-    .fa-arrow-up{
-        font-size: 2.3rem;
+    .slider-up.active{
+        
         left: 97%;
     }
 }
 @media (min-width: 661px) and (max-width: 788px ){
-    .fa-arrow-up{
-        font-size: 2rem;
+    .slider-up.active{
+        
         left: 97.5%;
     }
 }
 /* Salto dentro de los containers */
 @media (min-width: 531px) and (max-width: 660px ){
-    .fa-arrow-up{
-        font-size: 2.5rem;
-        left: 89.5%;
+    .slider-up.active{
+        
+        left:86.5%;
     }
 }
 @media (min-width: 421px) and (max-width: 530px ){
-    .fa-arrow-up{
-        font-size: 2.4rem;
-        left: 87.5%;
+    .slider-up.active{
+        
+        left: 84.5%;
     }
 }
 @media (min-width: 386px) and (max-width: 420px ){
-    .fa-arrow-up{
+    .slider-up.active{
         /* font-size: 2.3rem; */
-        left: 86.5%;
+        left: 83.5%;
     }
 }
 @media (min-width: 100px) and (max-width: 385px ){
-    .fa-arrow-up{
-        left: 86%;
+    .slider-up.active{
+        left: 81%;
     }
 }
 .container-inicio{

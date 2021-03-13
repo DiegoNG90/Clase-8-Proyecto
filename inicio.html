@@ -52,7 +52,6 @@
     </nav>
   </header>
   
-  <i class="fas fa-arrow-up"></i>
 
 
   <section>
@@ -61,7 +60,7 @@
       </div>      
       <div class="container-inicio"> 
         <img class="imagen-inicio-pg" src="images/PG_final_v2.png" alt="">
-        <h1 class="titulo titulo-inicio"> Bienvenido/a a mi portfolio web!</h1>
+        <h1> Bienvenido/a a mi portfolio web</h1>
     </div> <hr>
 
   </section>
@@ -117,7 +116,11 @@
         </div>
       </div>          
     </div>
-  </section>   
+  </section> 
+  <!-- Sticky-slider -->
+  <button class="slider-up">
+    <i class="fas fa-arrow-up"></i>
+  </button>
   
   <footer>
     <p> 2020 - Diego Nicolás Gándara <i class="fas fa-copyright"></i></p>
@@ -134,6 +137,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <!-- JSpropio -->
   <script src="js/main.js"></script>
+  <!-- Scrolldown -->
   <script>
     $(document).ready(function(){
       $("a").on('click', function(event) {   
@@ -148,6 +152,22 @@
         } 
       });
     });
+  </script>
+  <!-- ScrollUp -->
+  <script>
+    const scrollUp = document.querySelector(".slider-up");
+
+    window.addEventListener('scroll', () => {
+      if(window.pageYOffset > 100){
+        scrollUp.classList.add("active");
+      }else{
+        scrollUp.classList.remove("active");
+      }
+    })
+    scrollUp.addEventListener('click', ()=> {
+      // window.scrollTo({top: 0, left:0, behavior: "smooth" });
+      $("html, body").animate({scrollTop: 0}, "slow");
+    })
   </script>
 </body>
 </html>
