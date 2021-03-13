@@ -16,7 +16,7 @@ body{
 .bg-light{
     background-color: #e76f5198 !important;
     width: 100%;
-    
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     -moz-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     -ms-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -53,12 +53,17 @@ body{
     background-image: linear-gradient(to left, #f77f00, #f4a261);
 }
 .navbar-brand{
-    opacity: 0.5;
-    transition: all 1 ease;
-    transform: scale(0.9); 
+    opacity: 1;
+
+    display: flex;
+    /* transition: all 1 ease;
+    transform: scale(0.9);  */
     /* -webkit-animation: tracking-in-contract-bck-bottom 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     -moz-animation: tracking-in-contract-bck-bottom 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     -ms-animation: tracking-in-contract-bck-bottom 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both; */
+}
+.navbar-brand img{
+    height:100%;
 }
 @-webkit-keyframes tracking-in-contract-bck-bottom {
     0% {
@@ -97,16 +102,16 @@ body{
     }
 }
 .navbar-brand:hover{
-    opacity: 1;
+    /* opacity: 1;
     color: #264653;
     font-weight: 700;
     text-shadow: 2px 2px #f77f00;
-    transform: scale(1,1.6)
+    transform: scale(1,1.6) */
 }
 .navbar-brand:active{
-    -webkit-animation: rotate-out-center 0.8s ease-out alternate-reverse backwards;
+    /* -webkit-animation: rotate-out-center 0.8s ease-out alternate-reverse backwards;
     -moz-animation: rotate-out-center 0.8s ease-out alternate-reverse backwards;
-    -ms-animation: rotate-out-center 0.8s ease-out alternate-reverse backwards;
+    -ms-animation: rotate-out-center 0.8s ease-out alternate-reverse backwards; */
 }
 @-webkit-keyframes rotate-out-center {
     0% {
