@@ -5,6 +5,7 @@
 }
 body{
     background-color: #f4a261;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     -moz-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     -ms-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -185,12 +186,14 @@ body{
     -moz-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     -ms-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
-#skills:hover{
-    color: #218d80;
+.skills-nav:hover{
     font-weight: bolder;
     -webkit-animation: wobble-ver-right 0.8s both;
     -moz-animation: wobble-ver-right 0.8s both;
     -ms-animation: wobble-ver-right 0.8s both;
+}
+#skills:hover{
+    color: #218d80;
 }
 @-webkit-keyframes wobble-ver-right {
     0%,
@@ -951,6 +954,95 @@ footer{
 
 /* ------------------------------------INICIO AND SKILLS PAGE------------------------------ */
 /* INICIO */
+/* STICKY-SLIDER */
+.slider-up{
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2.5rem;
+    transition: 0.5s;
+    position: sticky;
+    bottom: 16px;
+    left: 96%;
+    height: 2.5rem;
+    width: 2.5rem;
+    border:none;
+    border-radius:100%;
+    background: rgb(186 11 86);
+    opacity: 0;
+    pointer-events: none;
+}
+.slider-up:hover{
+    text-decoration: none;
+}
+.slider-up.active{
+    bottom: 16px;
+    pointer-events: auto;
+    opacity:1;
+    transform: translateY(-55px);
+    /* left: 96%; */
+    
+}
+/* Remuevo horrible bordeado luego de hacer click en el boton */
+.slider-up:focus{
+    outline: 0;
+    box-shadow: none!important;
+}
+.fa-arrow-up{
+    color: gold;
+    font-size: 2rem;
+}
+.fa-arrow-up:hover{
+    cursor: pointer; 
+}
+
+  
+/* MEDIAQUERIES STICKY-slider */
+@media (min-width: 841px) and (max-width: 1024px ){
+    .slider-up.active{
+        left: 96%;
+        /* height: 50px;
+        width: 50px; */
+    }
+}
+@media (min-width: 789px) and (max-width: 840px ){
+    .slider-up.active{
+        
+        left: 97%;
+    }
+}
+@media (min-width: 661px) and (max-width: 788px ){
+    .slider-up.active{
+        
+        left: 97.5%;
+    }
+}
+/* Salto dentro de los containers */
+@media (min-width: 531px) and (max-width: 660px ){
+    .slider-up.active{
+        
+        left:86.5%;
+    }
+}
+@media (min-width: 421px) and (max-width: 530px ){
+    .slider-up.active{
+        
+        left: 84.5%;
+    }
+}
+@media (min-width: 386px) and (max-width: 420px ){
+    .slider-up.active{
+        /* font-size: 2.3rem; */
+        left: 83.5%;
+    }
+}
+@media (min-width: 100px) and (max-width: 385px ){
+    .slider-up.active{
+        left: 81%;
+    }
+}
 .container-inicio{
     background-color: #f4a261;
     padding: 0;
@@ -1037,7 +1129,6 @@ footer{
     -webkit-animation: flip-in-hor-top 1s cubic-bezier(0.600, -0.280, 0.735, 0.045) both;
     -moz-animation: flip-in-hor-top 1s cubic-bezier(0.600, -0.280, 0.735, 0.045) both;
     -ms-animation: flip-in-hor-top 1s cubic-bezier(0.600, -0.280, 0.735, 0.045) both;
-    }
 }
 @-webkit-keyframes flip-in-hor-top {
     0% {
@@ -1069,12 +1160,21 @@ footer{
 } 
 .container-inicio h1{
     position: absolute;
-    top: 5%;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    line-height: 3rem ;
+    top: 10%;
     color: whitesmoke;
     left: 3.5%;
     right: 1.5%;
     font-size: 2rem;
     animation: anochecer 10s 2;
+}
+@media (min-width: 100px) and (max-width: 322px ){
+    .container-inicio h1{
+        font-size: 1.5 rem;
+        letter-spacing: 2.5px;
+    }
 }
 .imagen-inicio-pg{
     width: 100%;
@@ -1134,7 +1234,7 @@ footer{
 }
 .skills-items i{
     font-size: 8rem;
-    color: white:
+    color: white;
     
 }
 .skills div{
