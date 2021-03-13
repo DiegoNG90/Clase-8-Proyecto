@@ -6,11 +6,11 @@ $inicio.onclick = function (){
     $inicio.style.color = '#5f0f40';
     $inicio.style.fontWidth = "bolder"     
 }
-const $skills = document.querySelector('#skills')
-$skills.onclick = function (){
-    $skills.style.color = '#007f5f';
-    $skills.style.fontWidth = "bolder" 
-}
+// const $skills = document.querySelector('#skills')
+// $skills.onclick = function (){
+//     $skills.style.color = '#007f5f';
+//     $skills.style.fontWidth = "bolder" 
+// }
 const $contacto = document.querySelector('#contacto')
 $contacto.onclick = function (){
     $contacto.style.color = 'white';
@@ -22,20 +22,6 @@ $brand.onclick = function(){
     $brand.style.webkitAnimation = 'rotate-out-center 0.8s ease-out alternate-reverse backwards;';
 }
 
-
-//Interaccion con el h1 de la pagina inicio.
-// let path = window.location.pathname;
-// const inicioPage = "/inicio.html";
-
-// const $h1Inicio = document.querySelector('.titulo-inicio') 
-// if (path.slice(path.length-12, path.length) === inicioPage){
-//     const userName = prompt("Escriba su nombre por favor!");
-//     if (!userName || userName === null) {
-//         $h1Inicio.innerText = `{"Bienvenido a mi portfolio web!"}`;
-//     } else {
-//     $h1Inicio.innerText = `{"Bienvenido a mi portfolio web, ${userName}!"}`;
-//     }
-// }
 
 // Pagina Proyectos
 const $footerLight = document.querySelector('.footer-proyecto');
@@ -61,20 +47,3 @@ $footerLight.onclick = function(){
     $navOscuro.className = "header-proyectos sticky-top";
 }
 
-
-//TRABAJO PENDIENTE
-// var $descripcionLandingPage = document.querySelector('.lead').textContent;
-// function cambiarColores(colores) {
-//     let lista = [];
-//     for (var i = 0; i < $descripcionLandingPage.length; i++) {
-//         lista.push($descripcionLandingPage[i].fontcolor("(colores[Math.ceil(i % colores.length)])"));
-//     }
-//     return ;
-// }
-
-// cambiarColores(['black','grey','white','red','green','blue']);
-
-// const $brand = document.querySelector('.navbar-brand');
-// $brand.onclick = function(){
-//     $inicio.style.-webkit
-// }
