@@ -1,11 +1,13 @@
 //Prueba
 console.log("linkeado 100%");
-// Animacion en el NAVBAR
+
+// Efectos en el NAVBAR onclick;
 const $inicio = document.querySelector('#inicio');
 $inicio.onclick = function (){
     $inicio.style.color = '#5f0f40';
     $inicio.style.fontWidth = "bolder"     
 }
+//Se remueven efectos sobre SKILLS
 // const $skills = document.querySelector('#skills')
 // $skills.onclick = function (){
 //     $skills.style.color = '#007f5f';
@@ -33,7 +35,7 @@ const $carrusel = document.querySelector('#carouselExampleSlidesOnly');
 const $titulo = document.querySelector('#oscuridad h1');
 
 
-
+//Evento prender la luz
 $footerLight.onclick = function(){
     $footerLight.style.backgroundColor = "white";
     $footerLight.children[0].style.backgroundColor = "White";
