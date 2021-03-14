@@ -10,6 +10,9 @@ body{
     -moz-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     -ms-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
+.oculto{
+    display: none!important;
+}
 /*----------------------------LANDING PAGE--------------------------*/
 /* NAVBAR */
 
@@ -1403,8 +1406,15 @@ footer{
 }
 
 /* -------------------------------- PROYECTOS ------------------------------ */
+
+#oscuridad h1{
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+}
 .container-proyectos{
     height: 100%;
+    padding: 0;
 }
 /* Carrusel */
 .carrusel{
@@ -1426,6 +1436,7 @@ div.proyectos-ocultos{
     background-color: white;
     display: none;
     text-align: center;
+    margin:0;
 }
 .proyecto-body{
     background-color: black;

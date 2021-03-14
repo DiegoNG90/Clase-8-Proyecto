@@ -29,6 +29,8 @@ const $bodyProyectos = document.querySelector('.proyecto-body');
 const $sectionCarrusel = document.querySelector('.carrusel');
 const $proyectosOcultos = document.querySelector('.proyectos-ocultos');
 const $navOscuro = document.querySelector('.header-proyectos');
+const $carrusel = document.querySelector('#carouselExampleSlidesOnly');
+const $titulo = document.querySelector('#oscuridad h1');
 
 
 
@@ -36,10 +38,16 @@ $footerLight.onclick = function(){
     $footerLight.style.backgroundColor = "white";
     $footerLight.children[0].style.backgroundColor = "White";
     $footerLight.children[0].style.color = "black";
-
+    $footerLight.style.animation = "heartbeat 0s ease-in-out infinite both";
+    //Pensar mejor una transicion con un background más copado.
     $bodyProyectos.style.backgroundColor = "white";
+    $titulo.style.color ="black";
+    $titulo.textContent = "Yo!";
+    $titulo.style.margin = "0.2rem"
     
-    $sectionCarrusel.style.backgroundColor = "white";
+    // $sectionCarrusel.style.backgroundColor = "white";
+    //Oculto el carrusel
+    $carrusel.classList.add("oculto");
     $proyectosOcultos.style.display = "flex";
     // $navOscuro.style.backgroundColor = "White";
     $navOscuro.style.opacity = "1";
