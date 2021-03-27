@@ -1,3 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url('../images/posible_fondo_proyectos.jpg') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
 h2{
     text-align: center;
 }
@@ -30,4 +41,18 @@ h5{
     border-top: 3.5px dotted yellowgreen;
     border-right: 3px dotted rgb(81, 169, 142);
     display: inline;
+}
+
+#shazam .card-body h5{
+    text-align: center;
+    background: radial-gradient(gold, rgb(205 92 92), rgb(10 105 228));
+    color:rgba(131, 6, 6, 0.89);
+    border-radius: 66%;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 66%;
+    -ms-border-radius: 66%;
+    -o-border-radius: 66%;
+}
+#shazam img, #stockeate img{
+    height: 186px;
 }
