@@ -33,7 +33,8 @@ const $proyectosOcultos = document.querySelector('.proyectos-ocultos');
 const $navOscuro = document.querySelector('.header-proyectos');
 const $carrusel = document.querySelector('#carouselExampleSlidesOnly');
 const $titulo = document.querySelector('#oscuridad h1');
-
+const $mundoGeek = document.querySelector('#mundoGeek');
+const $petFirmware = document.querySelector('#pet-firmware');
 
 //Evento prender la luz
 $footerLight.onclick = function(){
@@ -46,14 +47,35 @@ $footerLight.onclick = function(){
     $titulo.style.color ="black";
     $titulo.textContent = "Yo!";
     $titulo.style.margin = "0.2rem"
-    
-    // $sectionCarrusel.style.backgroundColor = "white";
+
+
+    // $mundoGeek.classList.remove("oculto");
+    $sectionCarrusel.style.backgroundColor = "white";
     //Oculto el carrusel
-    $carrusel.classList.add("oculto");
+    $carrusel.style.display = "none";
     $proyectosOcultos.style.display = "flex";
     // $navOscuro.style.backgroundColor = "White";
     $navOscuro.style.opacity = "1";
     $navOscuro.style.display = "flex";
     $navOscuro.className = "header-proyectos sticky-top";
 }
+
+
+//Doble evento para mostrar las características del proyecto
+//Evento hover
+$mundoGeek.addEventListener('mouseover', function(){
+    $mundoGeek.children[0].classList.remove("oculto")
+})
+
+$mundoGeek.addEventListener('mouseout', function(){
+    $mundoGeek.children[0].classList.add("oculto")
+})
+
+$petFirmware.addEventListener('mouseover', function(){
+    $petFirmware.children[0].classList.remove("oculto")
+})
+
+$petFirmware.addEventListener('mouseout', function(){
+    $petFirmware.children[0].classList.add("oculto")
+})
 
