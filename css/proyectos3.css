@@ -1,0 +1,33 @@
+h2{
+    text-align: center;
+}
+h5{
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+}
+
+#mundoGeek .card-body h5{
+    color:blue; 
+    text-decoration: blue;
+    border-bottom: 5px dotted blue;
+    display: inline;
+}
+
+#pet-firmware .card-body h5{
+    color:rgba(204, 119, 49, 0.959); 
+    text-decoration: 5px underline rgba(204, 119, 49, 0.959) ;
+}
+
+#burguer-flex .card-body h5{
+    color: rgb(81, 169, 142);
+    border-bottom: 5px double rgb(81, 169, 142);
+    display: inline;
+}
+
+#clima-api .card-body h5{
+    background: linear-gradient(135deg, yellow,orange, red);
+    /* border-bottom: 5px dotted orangered; */
+    border-top: 3.5px dotted yellowgreen;
+    border-right: 3px dotted rgb(81, 169, 142);
+    display: inline;
+}
