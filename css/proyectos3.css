@@ -53,6 +53,51 @@ h5{
     -ms-border-radius: 66%;
     -o-border-radius: 66%;
 }
-#shazam img, #stockeate img{
-    height: 186px;
+
+/* IMAGENES: Efectos opacity brigthness con HOVER  */
+.card img{
+    opacity: 0.1;
+    filter: brightness(0.10%);
+    -webkit-filter: brightness(10%);
+    transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -webkit-transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -moz-transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -ms-transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -o-transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.card img:hover{
+    cursor: pointer;
+    opacity: 1;
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+    transform: scale(1.10);
+    -webkit-transform: scale(1.10);
+    -moz-transform: scale(1.10);
+    -ms-transform: scale(1.10);
+    -o-transform: scale(1.10);
+}
+
+.card-text{
+    opacity: 0.5;
+    transition: 1s ease-in;
+    -webkit-transition: 1s ease-in;
+    -moz-transition: 1s ease-in;
+    -ms-transition: 1s ease-in;
+    -o-transition: 1s ease-in;
+}
+/* MEDIA QUERIES */
+@media (min-width: 1366px){
+    #shazam img, #stockeate img{
+        height: 224px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1365px){
+    #shazam img, #stockeate img{
+        height: 186px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    #shazam img, #stockeate img{
+        height: 134px;
+    }
 }

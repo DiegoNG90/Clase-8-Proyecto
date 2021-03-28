@@ -79,3 +79,19 @@ $petFirmware.addEventListener('mouseout', function(){
     $petFirmware.children[0].classList.add("oculto")
 })
 
+// PROYECTOS3.HTML : Efecto hover sobre la imagen que afecta al texto de las cards
+
+const cardImages = document.querySelectorAll(".card img");
+const cardText = document.querySelectorAll(".card-text");
+
+cardImages.forEach(cardImg => {
+    cardImg.addEventListener('mouseover', (e)=> {
+        let card = e.path[1].children[1].children[1];
+        card.style.opacity = 1;
+    })
+    cardImg.addEventListener('mouseout', (e)=> {
+        let card = e.path[1].children[1].children[1];
+        card.style.opacity = 0.5;
+    })
+})
+
