@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Portfolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+     <!-- Bootstrap 4 local-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+     <!-- fontawsome -->
+     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+     <!-- CSS Rules and Styling -->
+     <link rel='stylesheet' type='text/css' media='screen' href='css/proyectos3.css'> 
+     <!-- animaciones -->
+     <!-- <link rel="stylesheet" type='text/css' media='screen' href="css/animations.css"> -->
+     <!-- favicon/icono en el browser -->
+     <link rel="icon" href="images/favicon/code-ico.ico" type="image/x-icon">
+</head>
+<body class="proyecto-body">
+  <header class="header-proyectos">
+    <nav class="navbar navbar-expand-sm navbar-expand-md navbar-expand-lg navbar-expand-xl navbar-light bg-light ">
+      <a class="navbar-brand" href="index.html">
+        <img src="./images/logos/logodoble-diego-nicolas-gandara.png" alt="">
+      </a>
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-angle-double-down"></i></button>
+        
+      </button>
+      
+      <div class="collapse navbar-collapse navbar-expand-sm navbar-expand-md navbar-expand-lg navbar-expand-xl" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto navbar-expand-sm navbar-expand-md navbar-expand-lg navbar-expand-xl">
+          <li class="nav-item active">
+            <a class="nav-link" href="inicio.html" id="inicio"> INICIO <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active skills-nav">
+              <a class="nav-link" href="inicio.html#skills-section" id="skills"> SKILLS <span class="sr-only">(current)</span></a>
+            </li>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="proyectos.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              PROYECTOS
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://geekform.netlify.app/" target="_blank">Formulario Geek</a>
+              <a class="dropdown-item" href="https://landingpetpage-bootstrap.netlify.app" target="_blank">Pet landing page</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="proyectos.html">Ver todos los proyectos</a>
+          </div>
+          </li>
+          <li class="nav-item active">
+          <a class="nav-link" href="contacto.html" id="contacto">CONTACTO <span class="sr-only">(current)</span></a>
+          </li> 
+          
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="album bg-light" id="proyectos-maquetado">
+      <div class="container">
+        <h2>Maquetado web</h2>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm" id="mundoGeek">
+              <img src="./images/proyectos-iconos/background-images/mundo-geek-bgi.png" alt="formulario de mundo geek">
+              
+              <div class="card-body">
+                <h5 class="card-title mb-5">Mundo Geek</h5>
+                <p class="card-text mt-2">Siendo el <strong> primer formulario </strong> que cree, se puede observar el uso de etiquetas tales como form, select, input (de toda clase: text, email, radio, checkbox) y button (que está viculada a formspree.io). No es responsiva en sus inicios; ahora sí.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver web</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Github repo</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm" id="pet-firmware">
+              <img src="./images/proyectos-iconos/background-images/adopta-mascota-bgi.png" alt="firmware de una pagina de adopcion de mascotas">
+              
+              <div class="card-body">
+                <h5 class="card-title">Adopta una mascota!</h5>
+                <p class="card-text">Aquí puse a prueba por primera vez mi entendimiento de Bootstrap como libreria de maquetado, <strong> creando un firmware </strong> tratando de descifrar los principales componentes, utilidades, su sistema de grid y algunas pocas clases más.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver web</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Github repo</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm" id="burguer-flex">
+              <img src="./images/proyectos-iconos/background-images/hamburguesa-bgi.png" alt="hamburguesa realizada con flexbox">
+
+              <div class="card-body">
+                <h5 class="card-title">La mejor hamburguesa!</h5>
+                <p class="card-text mt-3">Éste proyecto nace de intentar dominar algunas reglas de CSS, utilizando Flexbox para entender la relación de elementos padres e hijos y las distintas propiedades de flexbox. Genial ejercicio luego de entrenarse con las flexyfrogs!</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver web</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Github repo</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+    <div class="album py-5 bg-light" id="proyectos-maquetado">
+      <div class="container">
+        <h2>Programacion web</h2>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm" id="clima-api">
+              <img src="./images/proyectos-iconos/background-images/clima-api.png" alt="simple app del clima">
+              
+              <div class="card-body">
+                <h5 class="card-title text-info">Weather API</h5>
+                <p class="card-text mt-2">En ésta oportunidad intenté <strong> traer/consumir datos de una API - openweather - </strong> para que el usuario pueda buscar el clima de la region que desee. Se renderiza por pantalla la temperatura, la ST, humedad, viento y presion entre otros datos.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver web</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Github repo</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm" id="shazam">
+              <img src="./images/proyectos-iconos/background-images/shazam.png" alt="el genio de los numeros">
+              
+              <div class="card-body">
+                <h5 class="card-title">Adivino Shazam!</h5>
+                <p class="card-text">Este proyecto nace de la idea de aplicar un algoritmo de <strong> búsqueda binaria (o binary search) </strong>. Todo lo que a éste proyecto le falta de UI/UX lo compensa con la originaliad del código y la idea de jugar con la lógica.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver web</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Github repo</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm" id="stockeate">
+              <img src="./images/proyectos-iconos/background-images/stockeate.png" alt="Stockeate: pagina para llevar un inventario">
+
+              <div class="card-body">
+                <h5 class="card-title">Stockeate</h5>
+                <p class="card-text mt-3"> Proyecto final de desarrollo frontend de <a href="https://linktr.ee/programadesdetucasa?fbclid=IwAR2GyPTMd_NL8vlrb3ynWLhsjCcvDOBT_4W26Wlb3eamn0slyZSVCqab7nc">PDTC</a>. Se trata de una <strong> especie de CRUD manejada sólo desde el Frontend</strong>, sin construir un servidor ni consumir una API. En vez de eso, <b> usamos el <em> localstorage </em> para emular una base de datos</b>. Además y por iniciativa propia, le <b> agregamos una matriz de login vainilla JS.</b>  </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver web</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Github repo</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+  </main>
+  
+
+
+  <footer class="proyecto footer-proyecto">
+    <p> 2020 - Diego Nicolás Gándara <i class="fas fa-copyright"></i></p>
+  </footer>
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- JSpropio -->
+  <script src="js/main.js"></script>
+
+  </body>
+</html>

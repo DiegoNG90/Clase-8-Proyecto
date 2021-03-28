@@ -1413,8 +1413,8 @@ footer{
     margin-top: 2rem;
 }
 .container-proyectos{
-    height: 100%;
-    padding: 0;
+    /* height: 100%;
+    padding: 0; */
 }
 /* Carrusel */
 .carrusel{
@@ -1454,8 +1454,72 @@ div.proyectos-ocultos{
     padding-bottom: 1rem;
 }
 .fotos-proyectos{
-    margin-bottom: 1rem;
-    
+    margin-bottom: 1rem;  
+}
+#mundoGeek{
+    background-image: url("../images/proyectos-iconos/background-images/mundo-geek-bgi.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80%;
+    transition: 1s ease-in-out;
+    opacity: 0.8;
+    filter: brightness(25%);
+    margin-bottom: 2rem;
+}
+#mundoGeek p{
+    transition: 1s ease-in-out;
+    opacity: 1;
+    filter: brightness(100%);
+}
+#mundoGeek p{
+    background: linear-gradient(130deg, #1ee88bd4, #abc036, #dd370ec7);
+    color: #e81616eb;
+    position: relative;
+    font-weight: bold;
+    font-size: 2.5rem;
+    top: 98px;
+    transition: 2s all ease-out;
+    border-radius: 0px 15px 0px 15px;
+    border-bottom: 5px solid black;
+    border-right: 3.5px solid black;   
+}
+
+#mundoGeek:hover{
+    opacity: 1;
+    filter: brightness(85%); 
+    height: 60%;
+}
+#pet-firmware{
+    background-image: url("../images/proyectos-iconos/background-images/adopta-mascota-bgi.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80%;
+    transition: 1s ease-in-out;
+    opacity: 0.8;
+    filter: brightness(25%);
+    margin-top: 2rem;
+}
+#pet-firmware p{
+    transition: 1s ease-in-out;
+    opacity: 1;
+    filter: brightness(100%);
+}
+#pet-firmware p{
+    background: linear-gradient(130deg, #1ee88bd4, #abc036, #dd370ec7);
+    color: #e81616eb;
+    /* position: relative;   */
+    font-weight: bold;
+    font-size: 2.5rem;
+    /* top: 100px; */
+    transition: 2s all ease-out;
+    border-radius: 0px 15px 0px 15px;
+    border-bottom: 5px solid black;
+    border-right: 3.5px solid black;   
+}
+#pet-firmware:hover{
+    opacity: 1;
+    filter: brightness(85%); 
+    height: 100%;
 }
 
 /* Footer */

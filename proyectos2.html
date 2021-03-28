@@ -16,7 +16,7 @@
      <!-- favicon/icono en el browser -->
      <link rel="icon" href="images/favicon/code-ico.ico" type="image/x-icon">
 </head>
-<body class="proyecto proyecto-body">
+<body class="proyecto-body">
   <header class="header-proyectos">
     <nav class="navbar navbar-expand-sm navbar-expand-md navbar-expand-lg navbar-expand-xl navbar-light bg-light ">
       <a class="navbar-brand" href="index.html">
@@ -99,42 +99,48 @@
 
     <section class="d-flex justify-content-center">
         
-        <div class="align-middle container proyectos-ocultos">
-          <div class="row"> 
-              
-            <div class="col-12 card col-sm-4" style="width: 18rem;">
-              <div class="card-body">
-                <h5 class="card-title">Mundo Geek</h5>
-                <img src="images/proyectos-iconos/mundogeek.png" alt="..." class="img-thumbnail fotos-proyectos">
-                <h6 class="card-subtitle mb-2 text-muted">Éste microproyecto se trata de crear un formulario.</h6>
-                <p class="card-text p-cards-proyectos">Siendo el primer formulario que cree, se puede observar el uso de etiquetas tales como form, select, input (de toda clase: text, email, radio, checkbox) y button (que está viculada a formspree.io). No es responsiva; está hecha sin Flexbox ni Bootstrap.</p>
-                <a href="https://geekform.netlify.app/" class="card-link">Visitá la web</a>
+      <div id="maquetadoYdiseño" class="text-center container proyectos-ocultos">
+        <div class="col-12"> 
+          <h2>Proyectos de maquetado y diseño web (estáticos)</h2>
+            <div class="col-12 card col-sm-12" id="mundoGeek">
+                    
+              <div class="card-body oculto proyectos-cards">
+                <!-- <h5 class="card-title">Mundo Geek</h5> -->
+                <!-- <img src="images/proyectos-iconos/mundogeek.png" alt="..." class="img-thumbnail fotos-proyectos"> -->
+                <!-- <h6 class="card-subtitle mb-2 text-muted">Éste microproyecto se trata de crear un formulario.</h6> -->
+                <p class="card-text p-cards-proyectos">Siendo el primer formulario que cree, se puede observar el uso de etiquetas tales como form, select, input (de toda clase: text, email, radio, checkbox) y button (que está viculada a formspree.io). No es responsiva en sus inicios; ahora sí. <br>
+                <span><a href="https://geekform.netlify.app/" target="_blank" class="card-link">Visitar el formulario</p></span>
               </div>
+                   
+            </div>
+            <hr>
+
+            <div class="col-12 card col-sm-12" id="pet-firmware">
+                <div class="card-body oculto proyectos-cards" >
+                    <!-- <h5 class="card-title">Pet landing firmware</h5>
+                    <img src="images/proyectos-iconos/adoptaunamigobootstrap.png" alt="..." class="img-thumbnail fotos-proyectos">
+                    <h6 class="card-subtitle mb-2 text-muted">"Adopta una mascota" es una landing page hecha con Bootstrap</h6> -->
+                    <p class="card-text p-cards-proyectos">Aquí puse a prueba por primera vez mi entendimiento de Bootstrap como libreria, tratando de descifrar los principales componentes, utilidades, su sistema de grid y algunas pocas clases más. <br>
+                    <span><a href="https://landingpetpage-bootstrap.netlify.app/" target="_blank" class="card-link">Visitá la web</a></span></p>
+                    
+                </div>
             </div>
 
-
-            <div class="col-12 card col-sm-4" style="width: 18rem;">
-              <div class="card-body">
-                <h5 class="card-title">Landing Page</h5>
-                <img src="images/proyectos-iconos/adoptaunamigobootstrap.png" alt="..." class="img-thumbnail fotos-proyectos">
-                <h6 class="card-subtitle mb-2 text-muted">"Adopta una mascota" es una landing page hecha con Bootstrap</h6>
-                <p class="card-text p-cards-proyectos">Aquí puse a prueba por primera vez mi entendimiento de Bootstrap como libreria, tratando de descifrar los principales componentes, utilidades, su sistema de grid y algunas pocas clases.</p>
-                <a href="https://landingpetpage-bootstrap.netlify.app/" class="card-link">Visitá la web</a>
-              </div>
+            <div class="col-12 card col-sm-12">
+                <div class="card-body">
+                    <h5 class="card-title">Promoción: Hamburguesa!</h5>
+                    <img src="images/proyectos-iconos/hamburguejaflexbox.png" alt="..." class="img-thumbnail fotos-proyectos">
+                    <h6 class="card-subtitle mb-2 text-muted">"La mejor anvorguesa"</h6>
+                    <p class="card-text p-cards-proyectos">Éste proyecto nace de intentar dominar algunas reglas de CSS, utilizando Flexbox para entender la relación de elementos padres e hijos.</p>
+                    <a href="https://flexbox-burguer.netlify.app/" class="card-link">Visitá la web</a>
+                </div>
             </div>
-
-            <div class="col-12 card col-sm-4" style="width: 18rem;">
-              <div class="card-body">
-                <h5 class="card-title">Promoción: Hamburguesa!</h5>
-                <img src="images/proyectos-iconos/hamburguejaflexbox.png" alt="..." class="img-thumbnail fotos-proyectos">
-                <h6 class="card-subtitle mb-2 text-muted">"La mejor anvorguesa"</h6>
-                <p class="card-text p-cards-proyectos">Éste proyecto nace de intentar dominar algunas reglas de CSS, utilizando Flexbox para entender la relación de elementos padres e hijos.</p>
-                <a href="https://flexbox-burguer.netlify.app/" class="card-link">Visitá la web</a>
-              </div>
-            </div>
-
-          </div>
         </div>
+       
+
+       
+     
+      </div>
     </section>
   </div>  
 

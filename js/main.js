@@ -1,11 +1,13 @@
 //Prueba
 console.log("linkeado 100%");
-// Animacion en el NAVBAR
+
+// Efectos en el NAVBAR onclick;
 const $inicio = document.querySelector('#inicio');
 $inicio.onclick = function (){
     $inicio.style.color = '#5f0f40';
     $inicio.style.fontWidth = "bolder"     
 }
+//Se remueven efectos sobre SKILLS
 // const $skills = document.querySelector('#skills')
 // $skills.onclick = function (){
 //     $skills.style.color = '#007f5f';
@@ -31,9 +33,10 @@ const $proyectosOcultos = document.querySelector('.proyectos-ocultos');
 const $navOscuro = document.querySelector('.header-proyectos');
 const $carrusel = document.querySelector('#carouselExampleSlidesOnly');
 const $titulo = document.querySelector('#oscuridad h1');
+const $mundoGeek = document.querySelector('#mundoGeek');
+const $petFirmware = document.querySelector('#pet-firmware');
 
-
-
+//Evento prender la luz
 $footerLight.onclick = function(){
     $footerLight.style.backgroundColor = "white";
     $footerLight.children[0].style.backgroundColor = "White";
@@ -44,14 +47,51 @@ $footerLight.onclick = function(){
     $titulo.style.color ="black";
     $titulo.textContent = "Yo!";
     $titulo.style.margin = "0.2rem"
-    
-    // $sectionCarrusel.style.backgroundColor = "white";
+
+
+    // $mundoGeek.classList.remove("oculto");
+    $sectionCarrusel.style.backgroundColor = "white";
     //Oculto el carrusel
-    $carrusel.classList.add("oculto");
+    $carrusel.style.display = "none";
     $proyectosOcultos.style.display = "flex";
     // $navOscuro.style.backgroundColor = "White";
     $navOscuro.style.opacity = "1";
     $navOscuro.style.display = "flex";
     $navOscuro.className = "header-proyectos sticky-top";
 }
+
+
+//Doble evento para mostrar las características del proyecto
+//Evento hover
+$mundoGeek.addEventListener('mouseover', function(){
+    $mundoGeek.children[0].classList.remove("oculto")
+})
+
+$mundoGeek.addEventListener('mouseout', function(){
+    $mundoGeek.children[0].classList.add("oculto")
+})
+
+$petFirmware.addEventListener('mouseover', function(){
+    $petFirmware.children[0].classList.remove("oculto")
+})
+
+$petFirmware.addEventListener('mouseout', function(){
+    $petFirmware.children[0].classList.add("oculto")
+})
+
+// PROYECTOS3.HTML : Efecto hover sobre la imagen que afecta al texto de las cards
+
+const cardImages = document.querySelectorAll(".card img");
+const cardText = document.querySelectorAll(".card-text");
+
+cardImages.forEach(cardImg => {
+    cardImg.addEventListener('mouseover', (e)=> {
+        let card = e.path[1].children[1].children[1];
+        card.style.opacity = 1;
+    })
+    cardImg.addEventListener('mouseout', (e)=> {
+        let card = e.path[1].children[1].children[1];
+        card.style.opacity = 0.5;
+    })
+})
 
