@@ -95,3 +95,40 @@ cardImages.forEach(cardImg => {
     })
 })
 
+//Lighbox en PROYECTOS3.html
+
+const lightbox = document.createElement("div");
+lightbox.id = "lightbox";
+document.body.appendChild(lightbox);
+
+//Evento click para mostrar Lightbox:
+cardImages.forEach(cardImg => {
+    cardImg.addEventListener("click", (e)=> {
+        lightbox.classList.add("active");
+        //Add img to Lightbox:
+        const img = document.createElement("img");
+        img.src = cardImg.src;
+        img.setAttribute("style", "height: 70%;");
+        //Remove previous child so they don't get stacked each other.
+        while(lightbox.firstChild){
+            lightbox.removeChild(lightbox.firstChild)
+        }
+        lightbox.appendChild(img);
+
+    })
+})
+
+// Ocultar ligthbox con click
+lightbox.addEventListener("click", (e) => {
+    //Evitar que si hace click en la img de ligthbox, este se cierre:
+    if(e.target !== e.currentTarget) return;
+    lightbox.classList.remove("active");
+})
+//Ocultar lightbox con keypress "Escape"
+document.body.addEventListener("keydown", (e)=> {
+    if(lightbox.classList[0] === "active"){
+        if(e.key === "Escape"){
+            lightbox.classList.remove("active");
+        }
+    }
+})
