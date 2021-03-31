@@ -141,3 +141,24 @@ document.body.addEventListener("keydown", (e)=> {
         }
     }
 })
+
+// Modificacion color en efecto de hover en botones (desde JS con 'mouseover' y 'mouseout')
+const buttons = document.querySelectorAll('.btn-outline-secondary')
+
+function generarRGBAleatorio (){
+    const numeroAzar = ()=>{ return Math.floor(Math.random()*256)}
+    const generarColor = () => {
+        return  `rgb(${numeroAzar()}, ${numeroAzar()}, ${numeroAzar()})`
+    }
+    return generarColor();
+}
+buttons.forEach(button => {
+    button.addEventListener('mouseover', ()=> {
+        button.style.backgroundColor = `${generarRGBAleatorio()}`;
+        button.style.border = "0px solid transparent";
+    })
+    button.addEventListener('mouseout', ()=> {
+        button.style.backgroundColor = "white"; 
+        button.style.border = "1px solid #6c757d"; 
+    })
+})

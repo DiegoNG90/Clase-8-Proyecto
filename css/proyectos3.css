@@ -123,7 +123,10 @@ button a:hover {
     text-decoration: none;
     color: inherit;
 }
-
+/* Bootstrap modificacion en efecto de hover en botones (desde JS con 'mouseover') */
+.btn-outline-secondary{
+    cursor: pointer;
+}
 /* MEDIA QUERIES */
 @media (min-width: 1366px){
     /* #shazam img, #stockeate img{
