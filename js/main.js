@@ -101,6 +101,7 @@ const lightbox = document.createElement("div");
 lightbox.id = "lightbox";
 document.body.appendChild(lightbox);
 
+
 //Evento click para mostrar Lightbox:
 cardImages.forEach(cardImg => {
     cardImg.addEventListener("click", (e)=> {
@@ -109,11 +110,19 @@ cardImages.forEach(cardImg => {
         const img = document.createElement("img");
         img.src = cardImg.src;
         img.setAttribute("style", "height: 70%;");
+        //Add p to Lightbox:
+        const p = document.createElement("p");
+        p.style.color = "#f7c000";
+        p.innerText = "Oprima ESC o haga click fuera de la imagen para cerrarla";
+        p.style.fontWeight = "bold";
+        p.style.filter = "drop-shadow(2px 4px 6px white)";
+        p.style.margin = "3px";
         //Remove previous child so they don't get stacked each other.
         while(lightbox.firstChild){
             lightbox.removeChild(lightbox.firstChild)
         }
         lightbox.appendChild(img);
+        lightbox.appendChild(p);
 
     })
 })

@@ -109,10 +109,20 @@ h5{
 }
 #lightbox.active{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+/* <a> que llevan a WEB y GH Repos */
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+button a:hover {
+    text-decoration: none;
+    color: inherit;
+}
 
 /* MEDIA QUERIES */
 @media (min-width: 1366px){
