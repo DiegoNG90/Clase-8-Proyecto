@@ -54,6 +54,15 @@ h5{
     -o-border-radius: 66%;
 }
 
+#stockeate .card-body h5 {
+    filter: blur(2px);
+}
+
+#stockeate .card-body h5:hover{
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
 /* IMAGENES: Efectos opacity brigthness con HOVER  */
 .card img{
     opacity: 0.1;
