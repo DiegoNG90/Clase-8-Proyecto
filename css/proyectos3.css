@@ -5,11 +5,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    background: url('../images/posible_fondo_proyectos.jpg') !important;
-    background-repeat: no-repeat !important;
-    background-size: cover;
-}
+/* .body {
+    background-image: url('../images/posible_fondo_proyectos.jpg');
+    background-size: contain;
+    position:initial;
+} */
 
 h2{
     text-align: center;
