@@ -152,3 +152,9 @@ button a:hover {
         height: 134px;
     }
 }
+@media (max-width: 991px){
+    #clima-api .card-body h5, #pet-firmware .card-body h5, {
+        display: inline-block;
+        text-align: center;
+    }
+}
