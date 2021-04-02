@@ -10,10 +10,15 @@
     background-size: contain;
     position:initial;
 } */
-
 h2{
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
+    width:fit-content;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    padding-bottom: 0.8rem;
+    padding-left: 1rem;
+    margin: 2rem;
 }
 h5{
     font-weight: bold;
@@ -167,8 +172,14 @@ button a:hover {
     }
 }
 @media (max-width: 991px){
-    #clima-api .card-body h5, #pet-firmware .card-body h5, {
+    #clima-api .card-body h5, #pet-firmware .card-body h5 {
         display: inline-block;
         text-align: center;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 786px){
+    .card img{
+        width: 100%;
     }
 }

@@ -56,6 +56,7 @@ cardImages.forEach(cardImg => {
         const img = document.createElement("img");
         img.src = cardImg.src;
         img.setAttribute("style", "height: 70%;");
+        img.setAttribute("style", "max-width: 75%;")
         //Add p to Lightbox:
         const p = document.createElement("p");
         p.style.color = "#f7c000";
