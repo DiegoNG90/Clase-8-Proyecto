@@ -1091,18 +1091,11 @@ footer{
     width: 90vw;
     margin: 1.5rem auto;
     text-align: center;
-    box-sizing: border-box;
-    /* border: 1px black solid; */
-    animation: scale-in-center 5.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) NaNs both;
-    -webkit-animation: scale-in-center 5.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) NaNs both;
-    -moz-animation: scale-in-center 5.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) NaNs both;
-    -ms-animation: scale-in-center 5.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) NaNs both;
-
-    animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
-    -webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
-    -moz-animation: scale-up-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
-    -ms-animation: scale-up-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
-    
+    box-sizing: border-box; 
+    animation: scale-up-center 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
+    -webkit-animation: scale-up-center 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
+    -moz-animation: scale-up-center 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
+    -ms-animation: scale-up-center 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
 }
 @-webkit-keyframes scale-up-center {
     0% {
@@ -1111,6 +1104,7 @@ footer{
         -ms-transform: scale(0.5);
     }
     100% {
+        -webkit-transform: translateY(-15rem);
         -webkit-transform: scale(1);
         -moz-transform: scale(1);
         -ms-transform: scale(1);
@@ -1118,7 +1112,6 @@ footer{
 }
 @keyframes scale-up-center {
     0% {
-        -webkit-transform: scale(0.5);
         -moz-transform: scale(0.5);
         -ms-transform: scale(0.5);
     }
