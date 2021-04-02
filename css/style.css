@@ -499,10 +499,10 @@ body{
 }
 
 .card-img-top {
-    animation: fade-in-fwd 1.1s cubic-bezier(0.785, 0.135, 0.150, 0.860) 2.7s both;
-    -webkit-animation: fade-in-fwd 1.1s cubic-bezier(0.785, 0.135, 0.150, 0.860) 2.7s both;
-    -moz-animation: fade-in-fwd 1.1s cubic-bezier(0.785, 0.135, 0.150, 0.860) 2.7s both;
-    -ms-animation: fade-in-fwd 1.1s cubic-bezier(0.785, 0.135, 0.150, 0.860) 2.7s both;
+    animation: fade-in-fwd 1.1s cubic-bezier(0.785, 0.135, 0.150, 0.860) 2.5s both;
+    -webkit-animation: fade-in-fwd 1.1s cubic-bezier(0.785, 0.135, 0.150, 0.860) 2.5s both;
+    -moz-animation: fade-in-fwd 1.1s cubic-bezier(0.785, 0.135, 0.150, 0.860) 2.5s both;
+    -ms-animation: fade-in-fwd 1.1s cubic-bezier(0.785, 0.135, 0.150, 0.860) 2.5s both;
 }
 @-webkit-keyframes fade-in-fwd {
     0% {
@@ -570,18 +570,22 @@ body{
 .card-titulo{
     color: rgb(94, 15, 94);
     animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 3.2s both;
-    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 3.2s both;
-    -moz-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 3.2s both;
-    -ms-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 3.2s both;
+    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2.7s both;
+    -moz-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2.7s both;
+    -ms-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2.7s both;
 }   
 .card-texto{
+    margin: 1px;
     color: rgb(89 88 88);
     font-weight: 500;
     font-family: 'Roboto Mono', monospace;
-    animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) 3.5s both;
-    -webkit-animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) 3.5s both;
-    -moz-animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) 3.5s both;
-    -ms-animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) 3.5s both;
+    animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2.8s both;
+    -webkit-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2.8s both;
+    -moz-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2.8s both;
+    -ms-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2.8s both;
+}
+.card-texto, .boton-a-proyectos{
+    font-size: 1.0rem;
 }
 
 @-webkit-keyframes tracking-in-expand {
@@ -608,14 +612,18 @@ body{
         opacity: 1;
     }   
 }  
+
+.card-body{
+    padding: 0.5rem;
+}
 .boton-a-proyectos {
     color: #fff;
     background-color: #220100;
     border-style: none;
-    animation: bounce-in-right 1.1s 4s both;
-    -webkit-animation: bounce-in-right 1.1s 4s both;
-    -moz-animation: bounce-in-right 1.1s 4s both;
-    -ms-animation: bounce-in-right 1.1s 4s both;
+    animation: bounce-in-right 1.1s 3s both;
+    -webkit-animation: bounce-in-right 1.1s 3s both;
+    -moz-animation: bounce-in-right 1.1s 3s both;
+    -ms-animation: bounce-in-right 1.1s 3s both;
 } 
 @-webkit-keyframes bounce-in-right {
     0% {
@@ -797,13 +805,13 @@ body{
  
 /* LANDING PAGE CONTAINER AND CARD */
 div.container{
-    width: 75%;
+    width: 85%;
     background-color: #d90427f5;
-    padding-bottom: 2rem;
-    padding-top: 2.5rem;
-    margin-top: 5.5rem;
+    padding-bottom: 0.6rem;
+    padding-top: 1rem;
+    margin-top: 0rem;
     padding-left: 2.5rem;
-    margin-bottom: 10rem;
+    /* margin-bottom: 10rem; */
     display:flex;
 }
 div.row{
@@ -820,7 +828,7 @@ div.index-card{
 footer{
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding-top:5rem;
+    padding-top: 1rem;
     animation: bounce-in-top 2s cubic-bezier(1.000, 0.000, 0.000, 1.000) both;
     -webkit-animation: bounce-in-top 2s cubic-bezier(1.000, 0.000, 0.000, 1.000) both;
     -moz-animation: bounce-in-top 2s cubic-bezier(1.000, 0.000, 0.000, 1.000) both;
@@ -1297,10 +1305,10 @@ footer{
     0%{transform: translate(50px);}
     100%{transform: translate(0px);}
 }
-.fab{
+.fab, .fas{
     opacity: 0.5;
 }
-.fab:hover{
+.fab:hover, .fas:hover{
     cursor: pointer;
     opacity: 5;
     animation: shadow-drop-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
