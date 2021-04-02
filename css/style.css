@@ -104,13 +104,13 @@ body{
         opacity: 1;
     }
 }
-.navbar-brand:hover{
+/* .navbar-brand:hover{
     opacity: 1;
     color: #264653;
     font-weight: 700;
     text-shadow: 2px 2px #f77f00;
     transform: scale(1,1.6)
-}
+} */
 .navbar-brand:active{
     animation: rotate-out-center 0.8s ease-out alternate-reverse backwards;
     -webkit-animation: rotate-out-center 0.8s ease-out alternate-reverse backwards;
@@ -145,7 +145,12 @@ body{
         opacity: 0;
     }
 }
-  
+.nav-item{
+
+}
+.nav-link, .dropdown-menu{
+    padding: 0px !important;
+}
 #inicio{
     opacity: 1;
     transition: all 1 ease-in;  
@@ -1374,7 +1379,6 @@ footer{
 .formulario-contacto{
     height: 100%;
     width: 100%;
-    background-image: inherit;
     background-image: url(../images/fondo-contacto.png);
     background-position: center;
     background-repeat: no-repeat;
