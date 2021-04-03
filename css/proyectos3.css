@@ -11,9 +11,17 @@
     position:initial;
 } */
 
+/* Titulos y subtitulos */
 h2{
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
+    width:fit-content;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    padding-bottom: 0.8rem;
+    padding-left: 1rem;
+    margin: 2rem;
+    box-shadow: -0.7rem 0.7rem 0.3rem grey;
 }
 h5{
     font-weight: bold;
@@ -64,6 +72,14 @@ h5{
 #stockeate .card-body h5:hover{
     filter: blur(0px);
     -webkit-filter: blur(0px);
+}
+#react-todo .card-body h5{
+    color: white;
+    text-shadow: 2px 2px 4px #c40808;
+}
+#react-videos .card-body h5{
+    color: yellow;
+    text-shadow: 1px 1px 2px goldenrod, 0 0 25px orange, 0 0 5px orangered;
 }
 
 
@@ -167,8 +183,14 @@ button a:hover {
     }
 }
 @media (max-width: 991px){
-    #clima-api .card-body h5, #pet-firmware .card-body h5, {
+    #clima-api .card-body h5, #pet-firmware .card-body h5 {
         display: inline-block;
         text-align: center;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 786px){
+    .card img{
+        width: 100%;
     }
 }

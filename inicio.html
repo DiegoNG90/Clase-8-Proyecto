@@ -26,27 +26,19 @@
         
       </button>
       
-      <div class="collapse navbar-collapse navbar-expand-sm navbar-expand-md navbar-expand-lg navbar-expand-xl" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto navbar-expand-sm navbar-expand-md navbar-expand-lg navbar-expand-xl">
+      <div class="collapse mr-7 mr-sm-3 mr-md-3 navbar-collapse navbar-expand-sm navbar-expand-md navbar-expand-lg navbar-expand-xl" id="navbarSupportedContent">
+        <ul class="navbar-nav navbar-expand-sm navbar-expand-md navbar-expand-lg navbar-expand-xl w-100 d-flex justify-content-around">
           <li class="nav-item active">
-            <a class="nav-link" href="inicio.html" id="inicio"> INICIO <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="inicio.html" id="inicio" role="button"> INICIO <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active skills-nav">
-              <a class="nav-link" href="inicio.html#skills-section" id="skills"> SKILLS <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="proyectos.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              PROYECTOS
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="https://geekform.netlify.app/" target="_blank">Formulario Geek</a>
-              <a class="dropdown-item" href="https://landingpetpage-bootstrap.netlify.app" target="_blank">Pet landing page</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="proyectos.html">Ver todos los proyectos</a>
-          </div>
+              <a class="nav-link" href="inicio.html#skills-section" id="skills" role="button"> SKILLS <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-          <a class="nav-link" href="contacto.html" id="contacto">CONTACTO <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="proyectos3.html" id="navbarDropdown" role="button"> PROYECTOS </a>
+          </li>
+          <li class="nav-item active">
+          <a class="nav-link" href="contacto.html" id="contacto" role="button">CONTACTO <span class="sr-only">(current)</span></a>
           </li> 
           
         </ul>
@@ -70,7 +62,7 @@
   <section> <!-- Skills -->
     <div class="container-skills">
 
-      <p>Me llamo Diego Nicolás Gándara y tengo 30 años, soy argentino, oriundo de Buenos Aires y vivo la mitad del año acá y la otra mitad en Barcelona. Además, soy amante del café y la programación. Empecé éste recorrido en Mayo de 2020, aprendiendo Python de forma autodidacta. En poco tiempo, me ví envuelto en un frenesí de conocimiento por la programación y la lógica. Así es que desde esa fecha al día de hoy, me paso entre 5 y 8 horas diarias estudiando tecnologías informáticas. <br>
+      <p>Me llamo Diego Nicolás Gándara y tengo 31 años, soy argentino, oriundo de Buenos Aires y vivo la mitad del año acá y la otra mitad en Barcelona. Además, soy amante del café y la programación. Empecé éste recorrido en Mayo de 2020, aprendiendo Python de forma autodidacta. En poco tiempo, me ví envuelto en un frenesí de conocimiento por la programación y la lógica. Así es que desde esa fecha al día de hoy, me paso entre 5 y 8 horas diarias estudiando tecnologías informáticas. <br>
       Actualmente, estoy estudiando de forma intensiva el maravilloso mundo del desarrollo web, con el énfasis puesto en el Front End.</p>
       <h2 id="dev-skills"><i class="fas fa-arrow-alt-circle-right"></i><a id="skills-anchor" href="#skills-section"> Mis skills</a><i class="fas fa-arrow-circle-left"></i></h2>
       <img src="images/ninja-gif.gif" alt="">
@@ -88,33 +80,71 @@
           </div>
           <div class="col-sm-6 col-md-6 col-lg-3">
             <div>
-              <i class="fab fa-python"></i>
-              <p>Python</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-3">
-            <div>
               <i class="fab fa-js-square"></i>
               <p>Javascript</p>
             </div>
           </div>
-        </div>    
-      </div>
-      <p>Además, vengo estudiando y familiarizandome con las siguientes tecnologías:</p>
-      <div class="skills-items">
-        <div class="row skills">
-          <div class="col-sm-6 col-md-6 col-lg-3">
-            <div><i class="fab fa-bootstrap"></i><p>Bootstrap</p></div>
-          </div>
           <div class="col-sm-6 col-md-6 col-lg-3">
             <div><i class="fab fa-react"></i><p>React</p></div>
           </div>
+        </div>
+        <div class="row skills" >
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div>
+              <i class="fas fa-database"></i>
+              <p>MySQL</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div>
+              <i class="fab fa-node"></i>
+              <p>NodeJS</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div>
+              <i class="fab fa-node-js"></i>
+              <p>Express</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div>
+              <i class="fab fa-python"></i>
+              <p>Python</p>
+            </div>
+          </div>
+        </div>      
+      </div>
+      <p>Otros skills y tecnologías:</p>
+      <div class="skills-items">
+        <div class="row skills">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex flex-wrap justify-content-around">
+            <div class="alert alert-primary" role="alert">
+              Bootstrap
+            </div>
+            <div class="alert alert-secondary" role="alert">
+              Semantic-UI
+            </div>
+            <div class="alert alert-success" role="alert">
+              Git y Github
+            </div>
+            <div class="alert alert-danger" role="alert">
+              Slack
+            </div>
+            <div class="alert alert-warning" role="alert">
+              Inglés (B2)
+            </div>
+          </div>
+          <!-- <div class="col-sm-6 col-md-6 col-lg-3">
+            <div><i class="fab fa-bootstrap"></i><p>Bootstrap</p></div>
+          </div>
+          
           <div class="col-sm-6 col-md-6 col-lg-3">
             <div><i class="fab fa-github"></i><p>Github</p></div>
           </div>
           <div class="col-sm-6 col-md-6 col-lg-3">
             <div><i class="fab fa-slack"></i><p>Slack</p></div>
-          </div>
+          </div> -->
         </div>
       </div>          
     </div>
