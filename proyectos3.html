@@ -212,8 +212,10 @@
   
 
 
-  <footer class="proyecto footer-proyecto">
-    <p> 2020 - Diego Nicolás Gándara <i class="fas fa-copyright"></i></p>
+  <footer class="proyecto footer-proyecto d-flex justify-content-between align-items-center bg-dark">
+    <span></span>
+    <p> 2021 - Diego Nicolás Gándara </p>
+    <i class="fas fa-arrow-alt-circle-up"></i>
   </footer>
 
   <!-- JQuery -->
@@ -222,6 +224,20 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <!-- JSpropio -->
   <script src="js/main.js"></script>
+  <script>
+    const scrollUp = document.querySelector(".fa-arrow-alt-circle-up");
+
+    window.addEventListener('scroll', () => {
+      if(window.pageYOffset > 100){
+        scrollUp.classList.add("active");
+      }else{
+        scrollUp.classList.remove("active");
+      }
+    })
+    scrollUp.addEventListener('click', ()=> {
+      window.scrollTo({top: 0, left:0, behavior: "smooth" });
+    })
+  </script>
 
   </body>
 </html>

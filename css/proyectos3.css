@@ -533,7 +533,23 @@ button a:hover {
 .btn-outline-secondary{
     cursor: pointer;
 }
-/* MEDIA QUERIES */
+
+/* -------------------  FOOTER  ---------------------- */
+.footer-proyecto p{
+    color: white;
+    font-family: 'Averia Serif Libre', cursive;
+    margin: 0.5rem;
+}
+
+.fa-arrow-alt-circle-up{
+    color: bisque;
+    font-size: 2rem;
+}
+.fa-arrow-alt-circle-up:hover{
+    cursor: grabbing;
+}
+
+/* ------------------- MEDIA QUERIES  ---------------------- */
 @media (min-width: 1366px){
     /* #shazam img, #stockeate img{
         height: 224px;
